@@ -131,7 +131,7 @@ delete from people where id = 10;
 -- 5. Подсчитать общее количество людей
 select count(id) from people;
 
--- 6. Рассчитать средний возраст всез людей
+-- 6. Рассчитать средний возраст всех людей
 select avg(age) from people;
 
 -- 7. Найти возраст всех людей
@@ -149,7 +149,7 @@ select gender, avg(age) from people group by gender;
 -- 11. Вывусти имя и год рождения людей которые говорят на английском (English)
 select first_name, age from people where language = 'English';
 
--- 12. Посчитать сколько человек, говориящих по казахском (Kazakh)
+-- 12. Посчитать сколько человек, говориящих на казахском (Kazakh)
 select count(*) from people where language = 'Kazakh';
 
 -- 13. Вывести фамилию, почту и id  всех женщин
